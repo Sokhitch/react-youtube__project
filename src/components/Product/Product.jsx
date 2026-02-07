@@ -9,7 +9,7 @@ function Product({ category, description, title, images, id }) {
       <div className="wrapper">
         <p className="movies-card__category">{category}</p>
         <a className="movies-card__link" href="/watch categories">
-          WATCH CATEGORIES
+          WATCH CATEGORY
         </a>
       </div>
     </article>

@@ -12,6 +12,7 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setMenu(data.categories);
+        console.log(data.categories)
       });
   }, []);
 

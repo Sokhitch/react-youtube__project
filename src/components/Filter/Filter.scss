@@ -1,0 +1,19 @@
+.header-nav {
+  &__input {
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+
+  &__item {
+    list-style: none;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+  }
+}

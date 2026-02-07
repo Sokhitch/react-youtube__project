@@ -1,0 +1,10 @@
+.movies {
+  padding: 0 100px;
+  &__title {
+    font-size: 60px;
+    font-weight: 400;
+    &-part {
+      color: #00897b;
+    }
+  }
+}

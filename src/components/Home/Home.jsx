@@ -1,7 +1,7 @@
-import "./Main.scss";
+import "./Home.scss";
 import Products from "../Products/Products";
 
-function Main({ menu }) {
+function Home({ menu }) {
   return (
     <main>
       <Products menu={menu} />
@@ -9,4 +9,4 @@ function Main({ menu }) {
   );
 }
 
-export default Main;
+export default Home;

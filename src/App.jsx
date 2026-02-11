@@ -1,8 +1,10 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Contacts from "./components/Contacts";
 
 function App() {
   const [menu, setMenu] = useState([]);
@@ -12,16 +14,20 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         setMenu(data.categories);
-        console.log(data.categories)
+        console.log(data.categories);
       });
   }, []);
 
   return (
-    <div className="content">
-      <Header />
-      <Main menu={menu} />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="content">
+        <Header />
+        <Routes>
+          <Route path={"/"} index element={<Home menu={menu} />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

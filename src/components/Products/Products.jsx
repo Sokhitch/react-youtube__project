@@ -3,9 +3,9 @@ import "./Products.scss";
 
 function Products({ menu }) {
   return (
-    <section className="movies">
+    <section className="products">
       <div className="container">
-        <div className="movies-card__wrap">
+        <div className="products-card__wrap">
           {menu ? (
             menu.map((element, index) => {
               return (

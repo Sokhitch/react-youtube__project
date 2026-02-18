@@ -1,0 +1,9 @@
+.meals {
+  &-card__wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    align-items: center;
+  }
+  padding: 0 100px;
+}

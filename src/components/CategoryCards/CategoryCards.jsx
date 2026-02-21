@@ -1,5 +1,6 @@
 import styles from "./CategoryCards.module.scss";
 import CategoryCard from "../CategoryCard/CategoryCard";
+import Errorpage from "../ErrorPage/Errorpage";
 
 function CategoryCards({ meals }) {
   return (
@@ -18,7 +19,7 @@ function CategoryCards({ meals }) {
               );
             })
           ) : (
-            <h2>Ничего не найдено</h2>
+            <Errorpage />
           )}
         </div>
       </div>

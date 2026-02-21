@@ -1,7 +1,7 @@
 import CategoryCards from "../CategoryCards/CategoryCards";
 import Preloader from "../Preloader/Preloader";
 import { useEffect, useState } from "react";
-import "./CategoryPage.scss";
+import styles from "./CategoryPage.module.scss";
 import { useNavigate, useParams } from "react-router-dom";
 
 function CategoryPage() {
@@ -21,7 +21,9 @@ function CategoryPage() {
   }, []);
   return (
     <main>
-      <button onClick={() => navigate("/")}>Go back</button>
+      <button className={styles["goBack-btn"]} onClick={() => navigate("/")}>
+        Go back
+      </button>
       {isLoading ? <Preloader /> : <CategoryCards meals={meals} />}
     </main>
   );

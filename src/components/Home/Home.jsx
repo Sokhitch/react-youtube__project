@@ -1,4 +1,4 @@
-import "./Home.scss";
+import styles from "./Home.module.scss";
 import Products from "../Products/Products";
 import Preloader from "../Preloader/Preloader";
 import { useEffect, useState } from "react";

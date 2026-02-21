@@ -1,11 +1,11 @@
 import Product from "../Product/Product";
-import "./Products.scss";
+import styles from "./Products.module.scss";
 
 function Products({ menu }) {
   return (
-    <section className="products">
+    <section className={styles.products}>
       <div className="container">
-        <div className="products-card__wrap">
+        <div className={styles["products-card__wrap"]}>
           {menu ? (
             menu.map((element, index) => {
               return (

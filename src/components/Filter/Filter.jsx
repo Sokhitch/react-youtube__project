@@ -1,17 +1,18 @@
-import "./Filter.scss";
+import { Link } from "react-router-dom";
+import styles from "./Filter.module.scss";
 
 function Filter({}) {
   return (
-    <nav className="header__navigation">
-      <ul className="header-nav__list">
-        <li className="header-nav__item">
-          <a href="/about">About</a>
+    <nav className={styles["header__navigation"]}>
+      <ul className={styles["header-nav__list"]}>
+        <li className={styles["header-nav__item"]}>
+          <Link to={"/about"}>About</Link>
         </li>
-        <li className="header-nav__item">
-          <a href="/Contacts">Contacts</a>
+        <li className={styles["header-nav__item"]}>
+          <Link to="/Contacts">Contacts</Link>
         </li>
-        <li className="header-nav__item">
-          <a href="/Authors">Authors</a>
+        <li className={styles["header-nav__item"]}>
+          <Link to="/Authors">Authors</Link>
         </li>
       </ul>
     </nav>

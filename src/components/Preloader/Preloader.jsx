@@ -1,14 +1,14 @@
-import "./Preloader.scss";
+import styles from "./Preloader.module.scss";
 
 function Preloader() {
   return (
-    <div className="preloader">
+    <div className={styles.preloader}>
       <img
-        className="preloader-svg"
+        className={styles["preloader-svg"]}
         src="/public/preloader__svg.svg"
         alt="preloader__svg"
       />
-      <p className="preloader__text">Loading ...</p>
+      <p className={styles["preloader__text"]}>Loading ...</p>
     </div>
   );
 }

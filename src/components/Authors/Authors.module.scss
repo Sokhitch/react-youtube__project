@@ -1,0 +1,33 @@
+.hero {
+  background-color: rgba(21, 99, 27, 0.805);
+  color: rgb(204, 216, 204);
+  width: 200px;
+  font-size: 30px;
+  margin: 0 auto;
+
+  &__link {
+    color: rgb(57, 57, 159);
+    font-size: 25px;
+    margin: 10px;
+  }
+  &__wrap {
+    text-align: center;
+  }
+  &-favorite__img {
+    width: 300px;
+    // aspect-ratio: 1/1;
+    height: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+.goBack-btn {
+  background-color: rgb(15, 24, 15);
+  padding: 6px 10px;
+  color: whitesmoke;
+  border-radius: 5px;
+  position: fixed;
+  left: 20px;
+  top: 110px;
+  margin-left: 10px;
+}

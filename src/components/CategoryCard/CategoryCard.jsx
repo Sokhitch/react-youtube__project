@@ -9,7 +9,7 @@ function CategoryCard({ title, id, images }) {
       <div className={styles["categoryСard__wrapper"]}>
         <Link
           className={styles["categoryСard__link"]}
-          to={`/ingredients/${title}`}
+          to={`/ingredients/${id}`}
         >
           WATCH RECIPE
         </Link>

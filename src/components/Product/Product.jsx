@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styles from "./Product.module.scss";
 
-function Product({ category, description, title, images, id }) {
+function Product({ category, description, title, images }) {
   return (
     <article className={styles["product-card"]}>
       <img className={styles["product__picture"]} src={images} alt={title} />

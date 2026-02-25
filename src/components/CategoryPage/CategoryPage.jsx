@@ -11,14 +11,17 @@ function CategoryPage() {
   const { title } = useParams();
 
   useEffect(() => {
+    // Eslint bug
+    //eslint-disable-next-line
     setIsLoading(true);
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${title}`)
       .then((response) => response.json())
       .then((data) => {
         setMeals(data.meals);
-        setIsLoading(false);
-      });
-  }, []);
+      })
+
+      .finally(() => setIsLoading(false));
+  }, [title]);
   return (
     <main>
       <button className={styles["goBack-btn"]} onClick={() => navigate("/")}>

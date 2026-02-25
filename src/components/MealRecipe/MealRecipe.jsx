@@ -1,5 +1,6 @@
 import MealIngredients from "../MealIngredients/MealIngredients";
 import styles from "./MealRecipe.module.scss";
+import Errorpage from "../ErrorPage/Errorpage";
 
 function MealRecipe({ recipe }) {
   return (

@@ -17,9 +17,7 @@ function Contacts() {
         fine dining, every detail is crafted around you to ensure an exceptional
         experience.
       </p>
-      <button>
-        <a href="+971 2 563 2937"></a>+971 2 563 2937
-      </button>
+      <a href="+971 2 563 2937">+971 2 563 2937</a>
       <button className={styles["goBack-btn"]} onClick={() => navigate(-1)}>
         Go Back
       </button>

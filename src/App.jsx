@@ -9,6 +9,7 @@ import Authors from "./components/Authors/Authors";
 import Errorpage from "./components/ErrorPage/Errorpage";
 import { Navigate } from "react-router-dom";
 import MealDetails from "./components/MealDetails/MealDetails";
+import Contacts from "./components/Contacts/Contacts";
 
 function App() {
   return (
@@ -18,8 +19,8 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path={"/category/:title"} element={<CategoryPage />} />
-          <Route path={"/ingredients/:title"} element={<MealDetails />} />
-          {/* <Route path={"/contacts"} element={<Contacts />} /> */}
+          <Route path={"/ingredients/:id"} element={<MealDetails />} />
+          <Route path={"/contacts"} element={<Contacts />} />
           <Route path={"/about"} element={<About />} />
           <Route path={"/Authors"} element={<Authors />} />
           <Route path="/404" element={<Errorpage />} />

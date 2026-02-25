@@ -4,8 +4,8 @@ import styles from "./About.module.scss";
 function About() {
   const navigate = useNavigate();
   return (
-    <div className="container">
-      <div className={styles.about}>
+    <div className={styles.about}>
+      <div className="container">
         <h3 className={styles["about__description"]}>
           This is the Menu of Novikov restaurant
         </h3>

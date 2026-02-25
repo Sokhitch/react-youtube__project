@@ -1,3 +1,4 @@
+import Errorpage from "../ErrorPage/Errorpage";
 import Product from "../Product/Product";
 import styles from "./Products.module.scss";
 
@@ -20,7 +21,7 @@ function Products({ menu }) {
               );
             })
           ) : (
-            <h2>Ничего не найдено</h2>
+            <Errorpage />
           )}
         </div>
       </div>

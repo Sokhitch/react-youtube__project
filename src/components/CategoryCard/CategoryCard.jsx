@@ -7,7 +7,10 @@ function CategoryCard({ title, id, images }) {
       <img className={styles["categoryСard__img"]} src={images} alt={"title"} />
       <p className={styles["categoryСard__title"]}>{title}</p>
       <div className={styles["categoryСard__wrapper"]}>
-        <Link className={styles["categoryСard__link"]} to="/watch categories">
+        <Link
+          className={styles["categoryСard__link"]}
+          to={`/ingredients/${title}`}
+        >
           WATCH RECIPE
         </Link>
       </div>

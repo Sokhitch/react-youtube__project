@@ -9,7 +9,7 @@ function ThemeDark() {
         width="20"
         height="20"
         className={styles.icon}
-        src="public/moon.svg"
+        src="/moon.svg"
         alt="Moon"
       />
     </div>

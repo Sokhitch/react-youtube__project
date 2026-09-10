@@ -9,7 +9,7 @@ function ThemeLight() {
         width="20"
         height="20"
         className={styles.icon}
-        src="public/sun.svg"
+        src="/sun.svg"
         alt="SUN"
       />
     </div>

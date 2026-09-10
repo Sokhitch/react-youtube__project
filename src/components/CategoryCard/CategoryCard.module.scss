@@ -1,14 +1,17 @@
 .categoryСard {
   box-shadow: -1px 5px 10px -1px rgb(5, 55, 84);
   padding: 4px;
+  background: var(--cardBackground);
+  border-radius: 20px;
   &__title {
     font-size: 18px;
     font-weight: 100;
   }
   &__link {
-    color: #ffab40;
-    font-weight: 200;
+    color: #4f7a45;
+    font-weight: 700;
     font-size: 13px;
+    margin-bottom: 20px;
   }
   &__wrapper {
     margin-top: 50px;

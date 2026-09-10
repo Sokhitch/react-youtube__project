@@ -1,8 +1,16 @@
+:root {
+  --mainBackgroundColor: #e8d3a8;
+  --cardBackground: #f0c878;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  box-sizing: border-box;
   padding: 15px;
 }
 
@@ -15,13 +23,17 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   line-height: 1.2;
   font-family: "Raleway", sans-serif;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: var(--mainBackgroundColor);
+}
+body[data-theme="light"] {
+  --mainBackgroundColor: #5579cc;
+  --cardBackground: whiteSmoke;
 }
 main {
   flex: 1;

@@ -3,6 +3,8 @@
   flex-direction: column;
   box-shadow: -1px 5px 10px -1px rgb(5, 55, 84);
   padding: 4px;
+  background: var(--cardBackground);
+  border-radius: 20px;
 
   img {
     width: 100%;
@@ -26,9 +28,9 @@
     justify-content: start;
     align-items: center;
     border: none;
-
-    color: #ffab40;
-    font-weight: 400;
+    margin-bottom: 10px;
+    color: #4f7a45;
+    font-weight: 700;
   }
 }
 .product__picture {

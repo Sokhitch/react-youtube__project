@@ -1,8 +1,7 @@
 .ingredientPage {
-  width: 500px;
-  margin: 0 auto;
+  margin-left: 100px;
   &__img {
-    width: 300px;
+    max-width: 300px;
     object-fit: cover;
   }
   &__title {

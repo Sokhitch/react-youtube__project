@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import MealRecipe from "../MealRecipe/MealRecipe";
 import Preloader from "../Preloader/Preloader";
+import IngredientsTableData from "../IngredientsTableData/IngredientsTableData";
+import YoutubeVideos from "../YoutubeVideos/YoutubeVideos";
 
 function MealDetails() {
   const [recipe, setRecipe] = useState([]);
@@ -33,6 +35,8 @@ function MealDetails() {
         Go Back
       </button>
       {isLoading ? <Preloader /> : <MealRecipe recipe={recipe} />}
+      <IngredientsTableData recipe={recipe} />
+      <YoutubeVideos recipe={recipe} />
     </main>
   );
 }
